@@ -35,4 +35,3 @@ document.querySelectorAll('.messenger-link').forEach(a=>{if(messengerConfigured|
 if(pageConfigured)document.getElementById('link-warning').hidden=true;
 document.getElementById('year').textContent=new Date().getFullYear();
 const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.site-header nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
-                          
