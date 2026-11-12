@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6efe4" />
+  <meta name="description" content="BIYAYA — freshly baked treats, made with care. Explore our baked goods catalog." />
+  <title>BIYAYA | Homemade Bakes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="#home"><img src="assets/logo.jpg" alt="BIYAYA business logo"/><span>BIYAYA <small>HOMEMADE BAKES</small></span></a><nav aria-label="Main navigation"><a href="#home">Home</a><a href="#catalog">Our Treats</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="header-cta" href="#contact">Order Now ↗</a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button></header>
+  <main>
+    <section class="hero" id="home"><div class="hero-copy"><span class="eyebrow">✦ BAKED WITH LOVE, SHARED WITH JOY</span><h1>A little bite of <em>blessing.</em></h1><p>Warm, comforting, homemade treats for sweet moments and everyday celebrations. Discover your next favorite from BIYAYA.</p><div class="hero-actions"><a class="button primary" href="#catalog">Explore Our Treats <span>↗</span></a><a class="text-link" href="#about">Our story →</a></div><div class="hero-note"><span>♡</span> Freshly baked • Made with care</div></div><div class="hero-visual"><img src="assets/chocolate-loaf.jpg" alt="Fresh chocolate loaf cakes topped with chocolate chips and nuts"/><div class="floating-label">OUR FEATURED BAKE <strong>Chocolate Loaf ♡</strong></div></div></section>
+    <div class="marquee" aria-label="Bakery values"><span>✦ FRESHLY BAKED</span><span>✦ HOMEMADE GOODNESS</span><span>✦ MADE WITH LOVE</span><span>✦ SWEET MOMENTS</span></div>
+    <section class="catalog section" id="catalog"><div class="section-heading"><div><span class="eyebrow">SOMETHING SWEET FOR EVERYONE</span><h2>Explore our <em>treats.</em></h2><p>Browse our baked goodies. Sample items and prices are for demonstration until confirmed by the shop.</p></div><span class="tiny-decoration">✳</span></div><div class="filters" role="group" aria-label="Filter products"><button class="filter active" data-filter="all" aria-pressed="true">All Treats</button><button class="filter" data-filter="loaves" aria-pressed="false">Loaf Cakes</button><button class="filter" data-filter="brownies" aria-pressed="false">Brownies</button><button class="filter" data-filter="cookies" aria-pressed="false">Cookies</button><button class="filter" data-filter="cakes" aria-pressed="false">Cakes</button></div><div class="product-grid" id="product-grid"></div><p class="catalog-disclaimer">* Only the chocolate loaf photograph is an actual uploaded product photo. Other products, illustrations, and prices are examples and should be replaced with the shop’s confirmed offerings.</p></section>
+    <section class="story section" id="about"><div class="story-mark"><img src="assets/logo.jpg" alt="BIYAYA logo"/></div><div class="story-copy"><span class="eyebrow">THE HEART BEHIND THE BAKES</span><h2>Made for the <em>moments that matter.</em></h2><p>BIYAYA means “blessing.” We celebrate the simple joy of sharing something sweet with the people who matter most.</p><p>From a quiet afternoon snack to a thoughtful gift, we hope every bite brings a little warmth to your day.</p><a class="text-link" href="#contact">Let's connect →</a></div></section>
+    <section class="contact section" id="contact"><span class="eyebrow">LET'S MAKE YOUR DAY SWEETER</span><h2>Craving something <em>delicious?</em></h2><p>Have a question about products, availability, or orders? Message BIYAYA on Facebook.</p><div class="contact-actions"><a class="button primary facebook-link" href="#" target="_blank" rel="noopener noreferrer">Visit Our Facebook ↗</a><a class="button secondary messenger-link" href="#" target="_blank" rel="noopener noreferrer">Message to Order ↗</a></div><p class="link-warning" id="link-warning">Facebook links are not configured yet. Add your actual page URL in <code>script.js</code> to activate them.</p></section>
+  </main>
+  <footer><div class="footer-brand">BIYAYA <span>♡</span></div><p>Homemade sweetness, shared with love.</p><div class="footer-links"><a href="#home">Back to top ↑</a><a class="facebook-link" href="#" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div><small>© <span id="year"></span> BIYAYA. All rights reserved.</small></footer>
+  <dialog id="product-dialog" aria-labelledby="dialog-title"><button class="close-dialog" aria-label="Close product details">×</button><div id="dialog-body"></div></dialog>
+</body>
+</html>
